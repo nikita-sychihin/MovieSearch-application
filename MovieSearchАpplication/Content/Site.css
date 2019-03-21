@@ -1,0 +1,39 @@
+﻿body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#formSearch {
+    width: 70%;
+}
+
+#search {
+    width: 60%;
+}
+
+#main-navbar {
+    border-bottom: 1px solid #1e72bd;
+}
+
+.col-md-3 {
+    margin: 30px auto;
+}
+
+#p_description {
+    color: blue;
+}
+
+#name {
+    color: black;
+    font-weight: 500;
+}
+
+#year {
+    font-size: 0.9em;
+    color: grey;
+}
+
+#content-image {
+    height : 400px;
+    width: 270px;
+    object-fit: cover;
+}

@@ -1,0 +1,22 @@
+﻿@using MovieSearchАpplication.Models
+@model IEnumerable<Films>
+
+    @foreach (Films film in Model)
+    {
+        <div class="col-md-3">
+            <div class="on_line">
+                <div class="image m-auto">
+                    <img src="@film.Image" alt="Image" id="content-image">
+                </div>
+                <div id="name">
+                      <p>@film.Name<br><span id="year">@film.Released, @film.Genre </span></p>
+                </div>
+                <div class="prew" id="year">
+                    <p>Режисёры: @film.Director</p>
+                    <p>
+                        Актеры: @foreach (Actors actor in film.Actors) {@actor.Name}
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
